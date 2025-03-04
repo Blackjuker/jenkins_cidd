@@ -22,9 +22,9 @@ pipeline{
             }
         }
     }
-    post{
-        always{
-            junit 'newman-report.xml'
-        }
-    }
+    // post{
+    //     always{
+    //         junit 'newman-report.xml'
+    //     }
+    // }
 }
