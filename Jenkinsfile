@@ -17,14 +17,13 @@ pipeline{
         }
         stage('test api'){
             steps{
-                sh 'newman run test_login.postman_collection -e tes_login.postman_collection '
-               // echo "bonjour"
+                sh 'newman run test_login.postman_collection -r cli,junit --reporter-junit-export="newman-report.xml"'
             }
         }
     }
-    // post{
-    //     always{
-    //         junit 'newman-report.xml'
-    //     }
-    // }
+    post{
+        always{
+            junit 'newman-report.xml'
+        }
+    }
 }
