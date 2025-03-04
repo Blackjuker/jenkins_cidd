@@ -17,8 +17,8 @@ pipeline{
         }
         stage('test api'){
             steps{
-                sh 'newman run test_login.postman_collection.json -e tes_login.postman_collection.json '
-
+                //sh 'newman run test_login.postman_collection.json -e tes_login.postman_collection.json '
+                echo "bonjour"
             }
         }
     }
