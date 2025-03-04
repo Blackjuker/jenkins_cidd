@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "f4c1c664-0e7e-4673-b712-5e76d72df2d1",
+		"name": "test_login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "544510"
+	},
+	"item": [
+		{
+			"name": "statuts code home",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8001",
+			"type": "default"
+		}
+	]
+}
