@@ -16,7 +16,7 @@ pipeline {
         }
         stage('test api') {
             steps {
-                sh 'newman run /collections/test_login.postman_collection.json -r cli,junit --reporter-junit-export="/etc/newman/newman-report.xml"'
+                sh 'newman run collections/test_login.postman_collection -r cli,junit --reporter-junit-export="/etc/newman/newman-report.xml"'
             }
         }
     }
